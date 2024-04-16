@@ -17,7 +17,7 @@ Selected Publication
 ======
 
 - Alleviating Exposure Bias in Diffusion Models through Sampling with Shifted Time Steps.  
-**Mingxiao Li***, Tingyu Qu *, Ruicong Yao, Wei Sun, Marie-Francine Moens.    
+**Mingxiao Li** *, Tingyu Qu *, Ruicong Yao, Wei Sun, Marie-Francine Moens.    
 International Conference on Learning Representatons (ICLR 2024)  
 [Paper](https://arxiv.org/pdf/2305.15583.pdf) [Code](https://github.com/Mingxiao-Li/TS-DPM)
 
@@ -29,13 +29,13 @@ International Conference on Learning Representatons (ICLR 2024)
 
 
 - Contrast, Attend and Diffuse to Decode High-Resolution Images fro Brain Activities.   
-   Jingyuan Sun*, **Mingxiao Li***, Zijiao Chen, Yunhao Zhang, Shaonan Wang, Marie-Francine Moens.      
+   Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Yunhao Zhang, Shaonan Wang, Marie-Francine Moens.      
   Advances on Neural Information Processing Systems (NeurIPS 2023)      
   [Paper](https://arxiv.org/abs/2305.17214.pdf) [Code](https://github.com/soinx0629/vis_dec_neurips/)    
    
 
 - Layout-Aware Dreamer for Embodied Visual Referring Expression Grounding.       
-  **Mingxiao Li***, Zehao Wang*, Tinne Tuytelaars, Marie-Francine Moens.      
+  **Mingxiao Li** *, Zehao Wang *, Tinne Tuytelaars, Marie-Francine Moens.      
   Proceeding of the AAAI Conference on Artificial Intelligence (AAAI 2023) **Oral Presentation**     
   [Paper](https://arxiv.org/abs/2212.00171.pdf) [Code](https://github.com/zehao-wang/LAD)   
 
@@ -49,11 +49,11 @@ Preprint
 ======
 
 - Animate Your Motion: Turning Still Images into Dynamic Videos.   
-  **Mingxiao Li***, Bo Wan *, Tinne Tuytelaars, Marie-Francine Moens.   
+  **Mingxiao Li** *, Bo Wan *, Tinne Tuytelaars, Marie-Francine Moens.   
   [Paper](https://arxiv.org/abs/2212.00171.pdf) [Project Page](https://mingxiao-li.github.io/smcd/)
 
 - NeuroCine: Decoding Vivid Video Sequences from Human Brain Activties.   
-  Jingyuan Sun *, **Mingxiao Li***, Zijiao Chen, Marie-Francine Moens.    
+  Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Marie-Francine Moens.    
   [Paper](https://arxiv.org/pdf/2402.01590.pdf)
 
 
