@@ -21,7 +21,7 @@ repository               : "mingxiao-li/mingxiao-li.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/myself.png"
+  avatar           : "mingxiao-li.png"
   name             : "Mingxiao Li"
   pronouns         : # example: "she/her"  
   bio              : "PhD student at KU Leuven"
