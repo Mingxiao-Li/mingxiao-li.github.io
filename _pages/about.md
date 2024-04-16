@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am Mingxiao Li and I am currently pursuing a PhD at KU Leuven under the guidance of [Prof.Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My current research focuses Vision and Language, Generative Models and Large Vision Language Model. Feel free to contact me for questions and collaborations.
+Hi there! I am Mingxiao Li and I am currently pursuing a PhD at KU Leuven under the guidance of [Prof.Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My current research focuses on Vision and Language, Generative Models and Large Vision Language Model. Feel free to contact me for questions and collaborations.
 
 
 Before my PhD, I obtained my MSc. in Artificial Intelligence (2019) and Quantum Chemistry and Computational Modeling (2018) from KU Leuven, and my BSc. in Material Physics (2015) from East China University of Science and Technology (ECUST).
