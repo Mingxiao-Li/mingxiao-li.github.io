@@ -63,5 +63,5 @@ Preprint
 Service
 =====
 
-Reviewer: AAAI, ACL, ECAI, ECML, EACL   
+Reviewer: NeurIPS, AAAI, ACL, ECAI, ECML, EACL   
 Workshop Organizer:  AAAI-2024 Workshop: Artificial Intelligence for Brain Encoding and Decoding (AIBED)   
