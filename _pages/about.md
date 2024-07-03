@@ -16,7 +16,7 @@ Before my PhD, I obtained my MSc. in Artificial Intelligence (2019) and Quantum 
 Selected Publication   
 ======
 - Animate Your Motion: Turning Still Images into Dynamic Videos.   
-  **Mingxiao Li** *, Bo Wan *, Marie-Francine Moens, Tinne Tuytelaars.
+  **Mingxiao Li** *, Bo Wan *, Marie-Francine Moens, Tinne Tuytelaars.   
   European Conference on Computer Vision (ECCV 2024)
   [Paper](https://arxiv.org/abs/2212.00171.pdf) [Project Page](https://mingxiao-li.github.io/smcd/) [Code](https://github.com/Mingxiao-Li/Animate-Your-Motion)
 
