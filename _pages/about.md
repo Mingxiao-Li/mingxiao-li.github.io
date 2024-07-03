@@ -20,6 +20,7 @@ Selected Publication
    European Conference on Computer Vision   
   [Paper](https://arxiv.org/abs/2212.00171.pdf) [Project Page](https://mingxiao-li.github.io/smcd/) [Code](https://github.com/Mingxiao-Li/Animate-Your-Motion)
 
+
 - Alleviating Exposure Bias in Diffusion Models through Sampling with Shifted Time Steps.  
 **Mingxiao Li** *, Tingyu Qu *, Ruicong Yao, Wei Sun, Marie-Francine Moens.    
 International Conference on Learning Representatons (ICLR 2024)  
@@ -36,7 +37,7 @@ International Conference on Learning Representatons (ICLR 2024)
    Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Yunhao Zhang, Shaonan Wang, Marie-Francine Moens.      
   Advances on Neural Information Processing Systems (NeurIPS 2023)      
   [Paper](https://arxiv.org/abs/2305.17214.pdf) [Code](https://github.com/soinx0629/vis_dec_neurips/)    
-   
+   ßß
 
 - Layout-Aware Dreamer for Embodied Visual Referring Expression Grounding.       
   **Mingxiao Li** *, Zehao Wang *, Tinne Tuytelaars, Marie-Francine Moens.      
