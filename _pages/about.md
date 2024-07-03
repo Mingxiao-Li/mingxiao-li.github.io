@@ -15,6 +15,10 @@ Before my PhD, I obtained my MSc. in Artificial Intelligence (2019) and Quantum 
 
 Selected Publication   
 ======
+- Animate Your Motion: Turning Still Images into Dynamic Videos.   
+  **Mingxiao Li** *, Bo Wan *, Tinne Tuytelaars, Marie-Francine Moens.
+   European Conference on Computer Vision   
+  [Paper](https://arxiv.org/abs/2212.00171.pdf) [Project Page](https://mingxiao-li.github.io/smcd/) [Code](https://github.com/Mingxiao-Li/Animate-Your-Motion)
 
 - Alleviating Exposure Bias in Diffusion Models through Sampling with Shifted Time Steps.  
 **Mingxiao Li** *, Tingyu Qu *, Ruicong Yao, Wei Sun, Marie-Francine Moens.    
@@ -48,9 +52,6 @@ International Conference on Learning Representatons (ICLR 2024)
 Preprint
 ======
 
-- Animate Your Motion: Turning Still Images into Dynamic Videos.   
-  **Mingxiao Li** *, Bo Wan *, Tinne Tuytelaars, Marie-Francine Moens.   
-  [Paper](https://arxiv.org/abs/2212.00171.pdf) [Project Page](https://mingxiao-li.github.io/smcd/)
 
 - NeuroCine: Decoding Vivid Video Sequences from Human Brain Activties.   
   Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Marie-Francine Moens.    
