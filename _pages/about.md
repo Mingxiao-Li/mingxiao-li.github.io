@@ -37,7 +37,7 @@ International Conference on Learning Representatons (ICLR 2024)
    Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Yunhao Zhang, Shaonan Wang, Marie-Francine Moens.      
   Advances on Neural Information Processing Systems (NeurIPS 2023)      
   [Paper](https://arxiv.org/abs/2305.17214.pdf) [Code](https://github.com/soinx0629/vis_dec_neurips/)    
-   ßß
+  
 
 - Layout-Aware Dreamer for Embodied Visual Referring Expression Grounding.       
   **Mingxiao Li** *, Zehao Wang *, Tinne Tuytelaars, Marie-Francine Moens.      
