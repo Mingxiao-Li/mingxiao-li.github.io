@@ -18,7 +18,8 @@ Selected Publication
 - Animate Your Motion: Turning Still Images into Dynamic Videos.   
   **Mingxiao Li** *, Bo Wan *, Marie-Francine Moens, Tinne Tuytelaars.   
   European Conference on Computer Vision (ECCV 2024)
-  [Paper](https://arxiv.org/abs/2212.00171.pdf) [Project Page](https://mingxiao-li.github.io/smcd/) [Code](https://github.com/Mingxiao-Li/Animate-Your-Motion)
+  [Paper](https://arxiv.org/abs/2212.00171.pdf)   
+  [Project Page](https://mingxiao-li.github.io/smcd/) [Code](https://github.com/Mingxiao-Li/Animate-Your-Motion)
 
 
 - Alleviating Exposure Bias in Diffusion Models through Sampling with Shifted Time Steps.  
@@ -65,5 +66,5 @@ Preprint
 Service
 =====
 
-Reviewer: NeurIPS, AAAI, EMNLP, ACL, ECAI, ECML, EACL   
+Reviewer: ICLR, NeurIPS, AAAI, EMNLP, ACL, ECAI, ECML, EACL   
 Workshop Organizer:  AAAI-2024 Workshop: Artificial Intelligence for Brain Encoding and Decoding (AIBED)   
