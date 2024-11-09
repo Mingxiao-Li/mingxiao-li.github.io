@@ -13,12 +13,12 @@ Hi there! I am Mingxiao Li and I am currently pursuing a PhD at KU Leuven under 
 Before my PhD, I obtained my MSc. in Artificial Intelligence (2019) and Quantum Chemistry and Computational Modeling (2018) from KU Leuven, and my BSc. in Material Physics (2015) from East China University of Science and Technology (ECUST).
 
 
-Selected Publication   
+Selected Publications  
 ======
 - Animate Your Motion: Turning Still Images into Dynamic Videos.   
   **Mingxiao Li** *, Bo Wan *, Marie-Francine Moens, Tinne Tuytelaars.   
   European Conference on Computer Vision (ECCV 2024)          
-  [Paper](https://arxiv.org/abs/2212.00171.pdf) [Project Page](https://mingxiao-li.github.io/smcd/) [Code](https://github.com/Mingxiao-Li/Animate-Your-Motion)
+  [Paper](https://arxiv.org/pdf/2403.10179.pdf) [Project Page](https://mingxiao-li.github.io/smcd/) [Code](https://github.com/Mingxiao-Li/Animate-Your-Motion)
 
 
 - Alleviating Exposure Bias in Diffusion Models through Sampling with Shifted Time Steps.  
