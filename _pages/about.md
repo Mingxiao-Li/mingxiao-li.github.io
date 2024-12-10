@@ -64,7 +64,8 @@ Preprint
   Tingyu Qu, Mingxiao Li, Tinne Tuytelaars, Marie-Francine Mones   
   [Paper](https://arxiv.org/pdf/2411.11066)  [Code](https://github.com/tingyu215/TS-LLaVA) [ModelScopeCommunity](https://www.modelscope.cn/models/tingyuqu/TS-LLaVA)
 
-
+- Action-based image editing guided by human instructions    
+  Maria Mihaela Trusca, Mingxiao Li, Marie-Francine Moens 
 (Note: * indicates equal contribution)
 
 
