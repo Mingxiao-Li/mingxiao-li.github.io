@@ -15,6 +15,11 @@ Before my PhD, I obtained my MSc. in Artificial Intelligence (2019) and Quantum 
 
 Selected Publications  
 ======
+- NeuroCine: Decoding Vivid Video Sequences from Human Brain Activties.   
+  Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Marie-Francine Moens.        
+  Proceeding of the AAAI Conference on Artificial Intelligence (AAAI 2025)      
+  [Paper](https://arxiv.org/pdf/2402.01590.pdf)
+
 - Animate Your Motion: Turning Still Images into Dynamic Videos.   
   **Mingxiao Li** *, Bo Wan *, Marie-Francine Moens, Tinne Tuytelaars.   
   European Conference on Computer Vision (ECCV 2024)          
@@ -49,14 +54,15 @@ International Conference on Learning Representatons (ICLR 2024)
   **Mingxiao Li**, Marie-Francine Moens.   
   Proceeding of the AAAI Conference on Artificial Intelligence (AAAI 2022)    
   [Paper](https://arxiv.org/pdf/2203.02985.pdf)  [Code](https://github.com/Mingxiao-Li/DMMGR)
+
   
 Preprint
 ======
 
 
-- NeuroCine: Decoding Vivid Video Sequences from Human Brain Activties.   
-  Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Marie-Francine Moens.    
-  [Paper](https://arxiv.org/pdf/2402.01590.pdf)
+- TS-LLaVA: Constructing Visual Tokens through Thumbnail-and-Sampling for Training-Free Video Large Language Models     
+  Tingyu Qu, Mingxiao Li, Tinne Tuytelaars, Marie-Francine Mones   
+  [Paper](https://arxiv.org/pdf/2411.11066)  [Code](https://github.com/tingyu215/TS-LLaVA) [ModelScopeCommunity](https://www.modelscope.cn/models/tingyuqu/TS-LLaVA)
 
 
 (Note: * indicates equal contribution)
