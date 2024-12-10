@@ -61,12 +61,12 @@ Preprint
 
 
 - TS-LLaVA: Constructing Visual Tokens through Thumbnail-and-Sampling for Training-Free Video Large Language Models     
-  Tingyu Qu, Mingxiao Li, Tinne Tuytelaars, Marie-Francine Mones   
+  Tingyu Qu, **Mingxiao Li**, Tinne Tuytelaars, Marie-Francine Mones   
   [Paper](https://arxiv.org/pdf/2411.11066)  [Code](https://github.com/tingyu215/TS-LLaVA) [ModelScopeCommunity](https://www.modelscope.cn/models/tingyuqu/TS-LLaVA)
 
 - Action-based image editing guided by human instructions    
-  Maria Mihaela Trusca, Mingxiao Li, Marie-Francine Moens    
-   
+  Maria Mihaela Trusca, **Mingxiao Li**, Marie-Francine Moens    
+
 (Note: * indicates equal contribution)
 
 
