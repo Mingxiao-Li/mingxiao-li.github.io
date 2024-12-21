@@ -69,7 +69,7 @@ Preprint
   [Paper](https://arxiv.org/abs/2412.04558) 
 
 - DCTdiff: Intriguing Properties of Image Generative Modeling in the DCT Space   
-  Mang Ning, Mingxiao Li*, Jianlin Su*, Haozhe Jia, Lanmiao Liu, Martin Beneš, Albert Ali Salah, Itir Onal Ertugrul   
+  Mang Ning, **Mingxiao Li** *, Jianlin Su *, Haozhe Jia, Lanmiao Liu, Martin Beneš, Albert Ali Salah, Itir Onal Ertugrul   
   [Paper](https://arxiv.org/abs/2412.15032)  [Code](https://github.com/forever208/DCTdiff)
 
 
