@@ -18,7 +18,7 @@ Selected Publications
 - NeuroCine: Decoding Vivid Video Sequences from Human Brain Activties.   
   Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Marie-Francine Moens.        
   Proceeding of the AAAI Conference on Artificial Intelligence (AAAI 2025)      
-  [Paper](https://arxiv.org/pdf/2402.01590.pdf)
+  [Paper](https://arxiv.org/pdf/2402.01590.pdf)  [Code](https://github.com/soinx0629/NeuralFlix)   
 
 - Animate Your Motion: Turning Still Images into Dynamic Videos.   
   **Mingxiao Li** *, Bo Wan *, Marie-Francine Moens, Tinne Tuytelaars.   
