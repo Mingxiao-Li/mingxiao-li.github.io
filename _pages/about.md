@@ -65,7 +65,13 @@ Preprint
   [Paper](https://arxiv.org/pdf/2411.11066)  [Code](https://github.com/tingyu215/TS-LLaVA) [ModelScopeCommunity](https://www.modelscope.cn/models/tingyuqu/TS-LLaVA)
 
 - Action-based image editing guided by human instructions    
-  Maria Mihaela Trusca, **Mingxiao Li**, Marie-Francine Moens    
+  Maria Mihaela Trusca, **Mingxiao Li**, Marie-Francine Moens     
+  [Paper](https://arxiv.org/abs/2412.04558) 
+
+- DCTdiff: Intriguing Properties of Image Generative Modeling in the DCT Space   
+  Mang Ning, Mingxiao Li*, Jianlin Su*, Haozhe Jia, Lanmiao Liu, Martin Beneš, Albert Ali Salah, Itir Onal Ertugrul   
+  [Paper](https://arxiv.org/abs/2412.15032)  [Code](https://github.com/forever208/DCTdiff)
+
 
 (Note: * indicates equal contribution)
 
