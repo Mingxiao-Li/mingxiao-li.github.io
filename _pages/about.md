@@ -15,6 +15,12 @@ Before my PhD, I obtained my MSc. in Artificial Intelligence (2019) and Quantum 
 
 Selected Publications  
 ======
+- DCTdiff: Intriguing Properties of Image Generative Modeling in the DCT Space   
+  Mang Ning, **Mingxiao Li** *, Jianlin Su *, Haozhe Jia, Lanmiao Liu, Martin Beneš, Albert Ali Salah, Itir Onal Ertugrul.
+  International Conference on Machine Learning (ICML 2025)
+  [Paper](https://arxiv.org/abs/2412.15032)  [Code](https://github.com/forever208/DCTdiff)
+
+
 - NeuroCine: Decoding Vivid Video Sequences from Human Brain Activties.   
   Jingyuan Sun *, **Mingxiao Li** *, Zijiao Chen, Marie-Francine Moens.        
   Proceeding of the AAAI Conference on Artificial Intelligence (AAAI 2025) **Oral Presentation**       
@@ -68,9 +74,7 @@ Preprint
   Maria Mihaela Trusca, **Mingxiao Li**, Marie-Francine Moens     
   [Paper](https://arxiv.org/abs/2412.04558) 
 
-- DCTdiff: Intriguing Properties of Image Generative Modeling in the DCT Space   
-  Mang Ning, **Mingxiao Li** *, Jianlin Su *, Haozhe Jia, Lanmiao Liu, Martin Beneš, Albert Ali Salah, Itir Onal Ertugrul   
-  [Paper](https://arxiv.org/abs/2412.15032)  [Code](https://github.com/forever208/DCTdiff)
+
 
 
 (Note: * indicates equal contribution)
