@@ -1,0 +1,42 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f6f2">
+    <title>{{ page.title }} — Mingxiao Li</title>
+    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | escape }}">
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;family=Noto+Serif+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
+    <script>
+      window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] }, svg: { fontCache: 'global' } };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+  </head>
+  <body class="blog-page">
+    <a class="blog-skip" href="#post-content">Skip to content</a>
+    <header class="blog-header">
+      <a href="{{ '/' | relative_url }}" class="blog-mark"><span></span> ML · Research notes</a>
+      <nav aria-label="Post navigation">
+        <a href="{{ '/year-archive/' | relative_url }}">All notes</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/personal_cv_industry.pdf' | relative_url }}">CV ↗</a>
+      </nav>
+    </header>
+    <main id="post-content" class="post-main">
+      <p class="blog-kicker">Technique note</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.date %}<p class="post-date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time></p>{% endif %}
+      <article class="post-content">
+        {{ content }}
+      </article>
+    </main>
+    <footer class="blog-footer"><a href="{{ '/year-archive/' | relative_url }}">← Back to notes</a><span>Mingxiao Li · Shanghai</span></footer>
+  </body>
+</html>

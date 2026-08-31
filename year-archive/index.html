@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f6f2">
+    <title>Technical notes — Mingxiao Li</title>
+    <meta name="description" content="Technical notes by Mingxiao Li on AI for Science discovery, scientific reasoning models, and visual generation.">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;family=Noto+Serif+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <script>
+      window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] }, svg: { fontCache: 'global' } };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+  </head>
+  <body class="blog-page">
+    <a class="blog-skip" href="#blog-content">Skip to content</a>
+    <header class="blog-header">
+      <a href="../" class="blog-mark"><span></span> ML · Research notes</a>
+      <nav aria-label="Blog navigation">
+        <a href="../">Home</a>
+        <a href="../#work">Work</a>
+        <a href="../personal_cv_industry.pdf">CV ↗</a>
+      </nav>
+    </header>
+    <main id="blog-content" class="blog-main">
+      <div class="blog-heading">
+        <p class="blog-kicker">Notes · Technique</p>
+        <h1>Technical notes</h1>
+        <p>Notes on AI for Science discovery, scientific reasoning models, visual generation, and the practical craft of research engineering.</p>
+      </div>
+
+      <section class="writer" aria-labelledby="writer-title">
+        <div class="writer__intro">
+          <p class="blog-kicker">Private studio · in-browser draft</p>
+          <h2 id="writer-title">Draft a note<br><em>before you publish.</em></h2>
+          <p>Paste a draft from Zhihu, shape it in Markdown, and see the reading view update as you write. Your work is saved in this browser only until you export it.</p>
+          <div class="writer__actions" role="group" aria-label="Draft actions">
+            <button class="writer-button writer-button--primary" type="button" data-editor-action="download">Download .md</button>
+            <button class="writer-button" type="button" data-editor-action="copy">Copy Markdown</button>
+            <button class="writer-button" type="button" data-editor-action="import">Import .md</button>
+            <button class="writer-button" type="button" data-editor-action="image">Insert image</button>
+            <button class="writer-button writer-button--quiet" type="button" data-editor-action="clear">Clear</button>
+            <input class="writer-file-input" type="file" accept=".md,.markdown,text/markdown,text/plain" data-editor-file-input aria-label="Import Markdown file">
+            <input class="writer-file-input" type="file" accept="image/*" data-editor-image-input aria-label="Insert image file">
+          </div>
+          <p class="writer__status" data-editor-status aria-live="polite">Drafts stay on this device.</p>
+        </div>
+
+        <div class="writer__workspace">
+          <div class="writer__meta">
+            <label>
+              <span>Title</span>
+              <input type="text" name="note-title" data-editor-title placeholder="A clear, curious title" autocomplete="off">
+            </label>
+            <label>
+              <span>Tags <small>comma separated</small></span>
+              <input type="text" name="note-tags" data-editor-tags placeholder="multimodal, diffusion, ai-for-science" autocomplete="off">
+            </label>
+          </div>
+          <div class="writer__panes">
+            <section class="writer-pane writer-pane--source" aria-labelledby="source-label">
+              <div class="writer-pane__bar"><span id="source-label">Markdown</span><small>write or paste here</small></div>
+              <textarea data-editor-body spellcheck="false" placeholder="# Your title\n\nStart with the question you are trying to answer...\n\nInline math: $x^2 + y^2 = z^2$\n\n![A useful figure](https://example.com/figure.png)" aria-label="Markdown editor"></textarea>
+            </section>
+            <section class="writer-pane writer-pane--preview" aria-labelledby="preview-label">
+              <div class="writer-pane__bar"><span id="preview-label">Preview</span><small>reading view</small></div>
+              <article class="markdown-preview" data-editor-preview aria-live="polite">
+                <p class="markdown-preview__empty">Your rendered note will appear here.</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="archive-section" aria-labelledby="archive-title">
+        <div class="archive-section__heading">
+          <p class="blog-kicker">Published notes</p>
+          <h2 id="archive-title">From the notebook.</h2>
+        </div>
+        <div class="notes-empty">
+          <p class="notes-empty__label">Local preview</p>
+          <h3>Published notes appear after a Jekyll build.</h3>
+          <p>Download a draft, place it in <code>_posts/</code>, and push it to GitHub Pages. This local page is ready for writing even when Jekyll is not running.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="blog-footer"><a href="../">← Back to Mingxiao Li</a><span>Shanghai · 2026</span></footer>
+    <script src="../assets/js/blog-editor.js" defer></script>
+  </body>
+</html>
