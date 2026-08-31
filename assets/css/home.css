@@ -77,12 +77,12 @@ body.home-page button { font: inherit; }
 .intro__statement { grid-column: 2 / 4; }
 .intro__statement h2 { max-width: 12ch; margin: 0; font-family: var(--serif); font-size: clamp(3.6rem, 6.4vw, 7.3rem); font-weight: 400; letter-spacing: -.05em; line-height: .9; }
 .intro__statement > p { max-width: 38rem; margin: 2.5rem 0 0; font-size: 1.05rem; line-height: 1.7; }
-.intro__portrait { grid-column: 2; margin-top: clamp(5rem, 9vw, 9rem); }
-.portrait-frame { position: relative; width: min(100%, 35rem); aspect-ratio: 5 / 4; padding: .55rem; border: 1px solid var(--ink); box-shadow: inset 0 0 0 4px var(--paper), inset 0 0 0 5px var(--ink); }
+.intro__portrait { grid-column: 2; justify-self: end; width: min(100%, 22rem); margin-top: clamp(5rem, 9vw, 9rem); }
+.portrait-frame { position: relative; width: 100%; aspect-ratio: 4 / 5; padding: .55rem; border: 1px solid var(--ink); box-shadow: inset 0 0 0 4px var(--paper), inset 0 0 0 5px var(--ink), .7rem .7rem 0 rgba(94,119,112,.15); }
 .portrait-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
 .portrait-frame > span { position: absolute; right: .7rem; bottom: .7rem; padding: .35rem .5rem; color: var(--paper); background: var(--ink-deep); font-family: var(--mono); font-size: .54rem; letter-spacing: .08em; text-transform: uppercase; }
 .portrait-frame > i { display: none; }
-.intro__portrait > p { max-width: 28rem; margin: 1.2rem 0 0; color: var(--muted); font-family: var(--mono); font-size: .61rem; letter-spacing: .04em; line-height: 1.7; text-transform: uppercase; }
+.intro__portrait > p { max-width: 22rem; margin: 1.2rem 0 0; color: var(--muted); font-family: var(--mono); font-size: .61rem; letter-spacing: .04em; line-height: 1.7; text-transform: uppercase; }
 .intro__bio { align-self: end; grid-column: 3; }
 .intro__bio > p { margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.8; }
 .intro__bio > p a { text-decoration-thickness: 1px; text-underline-offset: .22rem; }
@@ -217,7 +217,7 @@ body.home-page button { font: inherit; }
   .round-link { margin-top: 1.3rem; }
   .section-heading { grid-template-columns: 1fr; gap: 1.4rem; }
   .intro { display: block; }
-  .intro__portrait { margin-top: 4.5rem; }
+  .intro__portrait { width: min(100%, 19rem); margin-top: 4.5rem; }
   .intro__bio { margin-top: 2.5rem; }
   .research-card h3 { margin-top: 2.5rem; }
   .project__main { grid-template-columns: 4.6rem 1fr auto; min-height: 17rem; padding: 1.3rem 0; }
