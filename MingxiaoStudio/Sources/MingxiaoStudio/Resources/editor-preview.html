@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] }, svg: { fontCache: 'global' } };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+    <style>
+      :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #252a2d; background: #fbfaf7; }
+      body { margin: 0; padding: 24px 28px 40px; font-size: 15px; line-height: 1.75; }
+      h1, h2, h3, h4, h5, h6 { margin: 1.6em 0 .55em; font-family: Georgia, serif; font-weight: 500; line-height: 1.2; }
+      h1 { margin-top: 0; font-size: 2.2em; } h2 { font-size: 1.8em; } h3 { font-size: 1.45em; }
+      p, ul, ol, blockquote, pre { margin: 0 0 1em; }
+      a { color: #8e3329; }
+      code { padding: .12em .28em; background: #eeebe4; font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em; }
+      pre { overflow-x: auto; padding: 14px 16px; color: #f8f6ef; background: #252a2d; border-radius: 5px; }
+      pre code { padding: 0; color: inherit; background: transparent; }
+      blockquote { padding-left: 14px; border-left: 3px solid #8e3329; color: #687078; }
+      img { display: block; max-width: 100%; height: auto; margin: 1.2em auto; }
+      hr { margin: 2em 0; border: 0; border-top: 1px solid #d9dedf; }
+      .empty { color: #687078; font-style: italic; }
+      .math-block { overflow-x: auto; margin: 1.2em 0; }
+    </style>
+  </head>
+  <body>
+    <main id="preview"><p class="empty">Start writing to see a live preview.</p></main>
+    <script>
+      const escapeHtml = (value) => String(value)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+
+      const inlineMarkdown = (value, root) => {
+        let html = escapeHtml(value);
+        const codeSpans = [];
+        const mathSpans = [];
+        html = html.replace(/`([^`]+)`/g, (_, code) => { codeSpans.push(`<code>${code}</code>`); return `\u0000${codeSpans.length - 1}\u0000`; });
+        html = html.replace(/\$\$([^$]+)\$\$/g, (_, formula) => { mathSpans.push(`\\(${formula}\\)`); return `\u0001${mathSpans.length - 1}\u0001`; });
+        html = html.replace(/\$([^$\n]+)\$/g, (_, formula) => { mathSpans.push(`\\(${formula}\\)`); return `\u0001${mathSpans.length - 1}\u0001`; });
+        html = html.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (_, alt, url) => {
+          const safe = /^(https?:|data:image\/)/i.test(url) ? url : (url.startsWith('/images/') && root ? `file://${encodeURI(root + url)}` : url);
+          return `<img src="${safe}" alt="${alt}" loading="lazy">`;
+        });
+        html = html.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, label, url) => {
+          const safe = /^(https?:|mailto:|\/|#)/i.test(url) ? url : '#';
+          return `<a href="${safe}" target="_blank" rel="noreferrer">${label}</a>`;
+        });
+        html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/__([^_]+)__/g, '<strong>$1</strong>');
+        html = html.replace(/(^|[^*])\*([^*]+)\*/g, '$1<em>$2</em>').replace(/(^|[^_])_([^_]+)_/g, '$1<em>$2</em>');
+        html = html.replace(/\u0001(\d+)\u0001/g, (_, index) => mathSpans[Number(index)]);
+        return html.replace(/\u0000(\d+)\u0000/g, (_, index) => codeSpans[Number(index)]);
+      };
+
+      const renderMarkdown = (source, root) => {
+        const lines = String(source || '').replace(/\r\n?/g, '\n').split('\n');
+        const output = [];
+        let paragraph = [];
+        let index = 0;
+        const flush = () => { if (paragraph.length) { output.push(`<p>${inlineMarkdown(paragraph.join(' '), root)}</p>`); paragraph = []; } };
+        while (index < lines.length) {
+          const line = lines[index];
+          if (line.trim() === '$$') {
+            flush(); index += 1; const formula = [];
+            while (index < lines.length && lines[index].trim() !== '$$') { formula.push(lines[index]); index += 1; }
+            output.push(`<div class="math-block">\\[${escapeHtml(formula.join('\n'))}\\]</div>`); index += 1; continue;
+          }
+          const fence = line.match(/^\s*```\s*([\w-]*)\s*$/);
+          if (fence) {
+            flush(); const language = fence[1] ? ` class="language-${escapeHtml(fence[1])}"` : ''; const code = []; index += 1;
+            while (index < lines.length && !/^\s*```\s*$/.test(lines[index])) { code.push(lines[index]); index += 1; }
+            output.push(`<pre><code${language}>${escapeHtml(code.join('\n'))}</code></pre>`); index += 1; continue;
+          }
+          const heading = line.match(/^\s*(#{1,6})\s+(.+?)\s*#*\s*$/);
+          if (heading) { flush(); const level = heading[1].length; output.push(`<h${level}>${inlineMarkdown(heading[2], root)}</h${level}>`); index += 1; continue; }
+          if (/^\s*(---+|\*\s*\*\s*\*|___+)\s*$/.test(line)) { flush(); output.push('<hr>'); index += 1; continue; }
+          if (/^\s*[-*+]\s+/.test(line)) { flush(); const items = []; while (index < lines.length && /^\s*[-*+]\s+/.test(lines[index])) { items.push(lines[index].replace(/^\s*[-*+]\s+/, '')); index += 1; } output.push(`<ul>${items.map((item) => `<li>${inlineMarkdown(item, root)}</li>`).join('')}</ul>`); continue; }
+          if (/^\s*\d+[.)]\s+/.test(line)) { flush(); const items = []; while (index < lines.length && /^\s*\d+[.)]\s+/.test(lines[index])) { items.push(lines[index].replace(/^\s*\d+[.)]\s+/, '')); index += 1; } output.push(`<ol>${items.map((item) => `<li>${inlineMarkdown(item, root)}</li>`).join('')}</ol>`); continue; }
+          if (/^\s*>\s?/.test(line)) { flush(); const quote = []; while (index < lines.length && /^\s*>\s?/.test(lines[index])) { quote.push(lines[index].replace(/^\s*>\s?/, '')); index += 1; } output.push(`<blockquote>${inlineMarkdown(quote.join(' '), root)}</blockquote>`); continue; }
+          if (!line.trim()) flush(); else paragraph.push(line.trim());
+          index += 1;
+        }
+        flush(); return output.join('\n');
+      };
+
+      window.renderPreview = (data) => {
+        const root = document.querySelector('#preview');
+        const title = String(data?.title || '').trim();
+        const markdown = String(data?.markdown || '').trim();
+        const siteRoot = String(data?.siteRoot || '');
+        root.innerHTML = title || markdown ? `${title ? `<h1>${escapeHtml(title)}</h1>` : ''}${markdown ? renderMarkdown(markdown, siteRoot) : '<p class="empty">Start writing to see a live preview.</p>'}` : '<p class="empty">Start writing to see a live preview.</p>';
+        if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') window.MathJax.typesetPromise([root]).catch(() => {});
+      };
+    </script>
+  </body>
+</html>

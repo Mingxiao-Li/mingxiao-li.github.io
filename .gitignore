@@ -3,3 +3,8 @@ _site/
 .sass-cache/
 .bundle/
 Gemfile.lock
+.DS_Store
+.studio/
+MingxiaoStudio/.build/
+MingxiaoStudio/.swiftpm/
+MingxiaoStudio/dist/

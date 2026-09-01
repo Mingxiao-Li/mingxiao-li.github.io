@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -113,17 +115,32 @@
         </ol>
       </section>
 
+      {% assign published_notes = site.posts | where: "published", true %}
       <section class="content-section notes-section" id="notes" aria-labelledby="notes-title">
         <div class="section-heading">
           <h2 id="notes-title">Technical notes</h2>
-          <a href="year-archive/">Open the notes archive ↗</a>
+          <a href="year-archive/">View all notes ↗</a>
         </div>
         <p>I write about the techniques behind my work: diffusion, sampling, molecular representations, multimodal reasoning, and the practical craft of research engineering.</p>
-        <div class="notes-callout">
-          <strong>Writing studio</strong>
-          <span>Draft in Markdown, preview formulas and images, then export a note for publication.</span>
-          <a href="year-archive/">Open the private editor →</a>
-        </div>
+        {% if published_notes.size > 0 %}
+          <div class="home-notes-list">
+            {% for post in published_notes %}
+              <article class="home-note">
+                <div class="home-note__meta">
+                  <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %Y" }}</time>
+                  {% for tag in post.tags limit: 2 %}<span>{{ tag }}</span>{% endfor %}
+                </div>
+                <div class="home-note__body">
+                  <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                  <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+                </div>
+                <a class="home-note__link" href="{{ post.url | relative_url }}">Read note ↗</a>
+              </article>
+            {% endfor %}
+          </div>
+        {% else %}
+          <p class="home-notes-empty">No published notes yet. New technical notes will appear here after they are published.</p>
+        {% endif %}
       </section>
 
       <section class="content-section" id="service" aria-labelledby="service-title">

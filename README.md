@@ -11,6 +11,7 @@ Minimal personal homepage and technical-notes blog for Mingxiao Li.
 - `assets/css/` and `assets/js/` — homepage/blog styles and behavior
 - `images/` — the portrait, favicon, and social preview image
 - `personal_cv_industry.pdf` — the current CV
+- `MingxiaoStudio/` — the private macOS writing and publishing app
 
 ## Local preview
 
@@ -21,8 +22,16 @@ bundle exec jekyll serve
 
 Then open <http://localhost:4000/>.
 
-The local `/year-archive/` fallback includes a small in-browser writing desk: Markdown editor, live preview, LaTeX formulas (`$...$` / `$$...$$`), image Markdown, local image paste/drag-and-drop, local autosave, `.md` import, and Markdown export with Jekyll front matter. The fallback is excluded from the GitHub Pages build. Online visitors see only the Jekyll archive and posts with `published: true`.
+The homepage Notes section and public `/year-archive/` page are read-only: visitors see only Jekyll posts with `published: true`, including each note's date, tags, excerpt, and reading link. Drafts and editing tools are kept out of the website; writing remains private to Mingxiao Studio.
 
-The editor does not upload files by itself; after editing, download the file, place it in `_posts/`, and push the change to GitHub Pages.
+For private editing, build and open the macOS app:
 
-To publish a note, copy the draft template into `_posts/`, give it a date-based filename, set `published: true`, and replace the placeholder text.
+```bash
+cd MingxiaoStudio
+zsh build-app.sh
+open "dist/Mingxiao Studio.app"
+```
+
+Mingxiao Studio stages all visible homepage content (metadata, portrait, research, education, publications, notes, service, contact, and footer) and offers a live local homepage preview before anything is pushed. It writes Markdown with live preview (headings, code, formulas, links, and images), keeps drafts in `_drafts/` (with private folders and multiple saved files), publishes notes into `_posts/`, and can commit and push the public files to GitHub.
+
+Manual publishing remains possible: place a dated Markdown file in `_posts/` with `published: true`, then push the change to GitHub Pages.
